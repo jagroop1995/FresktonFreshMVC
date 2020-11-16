@@ -1,0 +1,220 @@
+﻿@model IEnumerable<FrenktonFresh.Models.ProductTable>
+
+@{
+    ViewBag.Title = "ProductList";
+}
+<style>
+    .card img {
+        height: 300px;
+    }
+</style>
+
+<div>
+    <img src="~/images/product-font.jpg" class="fontr">
+</div>
+<br/>
+<br/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Latest  Product </h1>
+        </div>
+
+        @foreach (var item in Model)
+        {
+            <Div class="col-md-4 text-center card">
+                <h1 class="text-center" style="color:blue;"> @Html.DisplayFor(modelItem => item.ProductName) </h1>
+                <img src="https://lallahoriye.com.tirzee.com/wp-content/uploads/2019/04/Product_Lg_Type.jpg" class="img-thumbnail" /><br />
+                <h3 class="btn btn-primary">Buy Now - @Html.DisplayFor(modelItem => item.Price)</h3>
+                <p> @Html.DisplayFor(modelItem => item.CompanyName)</p>
+            </Div>
+
+        }
+
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" style="background-color:black;margin:10px;">
+            <h1 style="text-align:center;">Product Details</h1>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/product (3).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Lays..</h1>
+                <p class="price">$4.99</p>
+                <p>Go healthy go delightful..</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+            <div class="card">
+                <img src="~/images/product (2).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Skippy...</h1>
+                <p class="price">$9.99</p>
+                <p>Make Healthy...</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card">
+                <img src="~/images/product (4).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Cucumber..</h1>
+                <p class="price">$9.99</p>
+                <p>Best for salad....</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+
+
+            <div class="card">
+                <img src="~/images/product (5).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Orange Juice...</h1>
+                <p class="price">$39.99</p>
+                <p>100% edible...</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card">
+                <img src="~/images/product (6).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Apple...</h1>
+                <p class="price">$59.99</p>
+                <p>Good food good health....</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+
+
+            <div class="card">
+                <img src="~/images/product (7).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Garlic....</h1>
+                <p class="price">$11.99</p>
+                <p>Bring your taste....</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card">
+                <img src="~/images/product (8).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Radish white....</h1>
+                <p class="price">$6.99</p>
+                <p>best for salad....</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/product (9).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Potato...</h1>
+                <p class="price">$16.99</p>
+                <p>OMG.... Most essential....</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+
+            <div class="card">
+                <img src="~/images/product (11).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Cauliflower....</h1>
+                <p class="price">$7.99</p>
+                <p>Taste like a magnusopum....</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/product (12).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Fruit & Grain...</h1>
+                <p class="price">$39.99</p>
+                <p>taste is good...</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+
+            <div class="card">
+                <img src="~/images/product (13).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Strawberry</h1>
+                <p class="price">$19.99</p>
+                <p>OMG... So beautiful.... </p>
+                <p><button>Add to Cart</button></p>
+            </div>
+
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card">
+                <img src="~/images/product (14).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Ladies Finger....</h1>
+                <p class="price">$12.99</p>
+                <p>Taste that indivudually cxan rely upon....</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+            <div class="card">
+                <img src="~/images/product (15).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Spinch</h1>
+                <p class="price">$9.99</p>
+                <p>Make your food healty..... </p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/product (16).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Green Giant</h1>
+                <p class="price">$29.99</p>
+                <p>New look better taste...</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card">
+                <img src="~/images/product (17).jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Green stick.... </h1>
+                <p class="price">$23.99</p>
+                <p>Charming........</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "AdminZone";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Welcome to the Admin Zone </h1>
+            <h2><a href="@Url.Action("ViewAllProduct","Product")" class="btn btn-success"> Product Setup </a></h2>
+            <h2><a href="@Url.Action("EmployeeList","Staff")" class="btn btn-success"> Employee Setup </a></h2>
+            <h2><a href="@Url.Action("QueryList","Contact")" class="btn btn-success">  Query Details </a></h2>
+
+            <br/>
+
+            <a href="@Url.Action("Index","Home")" class="btn btn-danger">Logout </a>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/modernizr")
+
+
+
+</head>
+<body>
+    <div class="demo">
+        <img src="~/images/logo.png">
+    </div>
+    <br /><br />
+
+    <div class="menubar">
+        <ul>
+            <li><a href="@Url.Action("adminLogin","Admin")">Admin Login</a></li>
+            <li><a href="@Url.Action("Contact","Home")">CONTACT US</a></li>
+            <li><a href="@Url.Action("About","Home")">ABOUT US</a></li>
+            <li><a href="@Url.Action("ProductList","Product")">PRODUCTS</a></li>
+            <li><a href="@Url.Action("Index","Home")">HOME</a></li>
+        </ul>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="container-fluid">
+        <img src="~/images/cart1.png" class="cart1">
+    </div>
+
+
+    <div class="container-fluid body-content">
+        @RenderBody()
+        <hr />
+
+    </div>
+
+    <div class="container-fluid">
+        <img src="~/images/cataloge.png" class="fontq">
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "adminLogin";
+}
+
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-12">
+            <h1 style="background-color:black;color:yellow;">Admin Login Section </h1>
+            <form method="post" action="verifyLogin" class="text-center">
+                <div class="form-group">
+                    <label>Enter User Name </label>
+
+                    <input type="text" id="Usertxt" name="Usertxt" class="form-control" style="border:1px solid black;" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Enter Password </label>
+                    <input type="password" id="Passwordtxt" name="Passwordtxt" class="form-control"style="border:1px solid black;color:black;" required />
+                </div>
+
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success" value="Sign In " required />
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+</div>
